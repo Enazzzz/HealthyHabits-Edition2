@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Habits Newsletter - Edition 2</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- GSAP (CDN) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>HealthyHabits - Edition 2</h1>
+      <h2>Understanding Stress & Anxiety</h2>
+      <div id="stress-meter">
+        <div id="stress-level"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== STRESS RESPONSE SECTION ====== -->
+  <section class="stress-response">
+    <h2>What Happens in Your Body?</h2>
+    <div class="icons-container">
+      <div class="icon" data-name="Brain">🧠<span class="tooltip">Brain activates fight/flight signals</span></div>
+      <div class="icon" data-name="Heart">❤️<span class="tooltip">Heart rate increases</span></div>
+      <div class="icon" data-name="Lungs">🌬️<span class="tooltip">Breathing becomes rapid</span></div>
+      <div class="icon" data-name="Muscles">💪<span class="tooltip">Muscles tense for action</span></div>
+    </div>
+  </section>
+
+  <!-- ====== POSITIVE VS NEGATIVE STRESS ====== -->
+  <section class="stress-cards">
+    <h2>Positive vs Negative Stress</h2>
+    <div class="card positive">
+      <h3>Acute Stress / Advantage</h3>
+      <p>Studying before a test → focus improves and alertness increases.</p>
+    </div>
+    <div class="card negative">
+      <h3>Chronic Stress / Mismanaged</h3>
+      <p>Constant worry → headaches, fatigue, and decreased immune function.</p>
+    </div>
+  </section>
+
+  <!-- ====== STRESS PERCEPTION QUIZ ====== -->
+  <section class="stress-quiz">
+    <h2>Perception of Stress</h2>
+    <p>Scenario: You have to speak in front of a large audience. How do you feel?</p>
+    <div class="options-container">
+      <div class="option positive">Positive</div>
+      <div class="option negative">Negative</div>
+    </div>
+    <div class="feedback"></div>
+  </section>
+
+  <!-- ====== HEALTH RISKS / CHRONIC STRESS ====== -->
+  <section class="health-risks">
+    <h2>Health Risks of Chronic Stress</h2>
+    <div class="risk-container">
+      <div class="health-risk">
+        <div class="bar" data-height="80%"></div>
+        <p>Heart Disease</p>
+      </div>
+      <div class="health-risk">
+        <div class="bar" data-height="70%"></div>
+        <p>Insomnia</p>
+      </div>
+      <div class="health-risk">
+        <div class="bar" data-height="60%"></div>
+        <p>Anxiety</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== ANXIETY & COPING STRATEGIES ====== -->
+  <section class="anxiety-coping">
+    <h2>Anxiety & Coping Strategies</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-btn">Stress</button>
+        <div class="accordion-content">
+          <p>Feeling stressed can trigger the fight, flight, or freeze response.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-btn">Anxiety</button>
+        <div class="accordion-content">
+          <p>Anxiety is prolonged stress or worry that affects daily life.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-btn">Coping Strategies</button>
+        <div class="accordion-content">
+          <p>Breathing exercises, meditation, physical activity, and talking to someone can help.</p>
+          <div class="breathing-circle"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FINDING HELP ====== -->
+  <section class="finding-help">
+    <h2>Finding Help / Hotlines</h2>
+    <div class="help-cards">
+      <div class="help-card">
+        <h3>National Suicide Prevention Lifeline</h3>
+        <p>1-800-273-TALK (8255)</p>
+      </div>
+      <div class="help-card">
+        <h3>Local Counseling Services</h3>
+        <p>Contact your school counselor or local mental health clinic.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CITATIONS ====== -->
+  <section class="citations">
+    <h2>Citations</h2>
+    <ul>
+      <li><a href="https://www.apa.org/topics/stress" target="_blank">American Psychological Association - Stress</a></li>
+      <li><a href="https://www.nimh.nih.gov/health/topics/anxiety-disorders" target="_blank">NIMH - Anxiety Disorders</a></li>
+      <li><a href="https://www.cdc.gov/mentalhealth/stress-coping" target="_blank">CDC - Stress & Coping</a></li>
+    </ul>
+  </section>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script src="js/gsap-scroll.js"></script>
+</body>
+</html>
