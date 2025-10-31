@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Healthy Habits Newsletter - Edition 2</title>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 
-  <!-- GSAP (CDN) -->
+  <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
 </head>
@@ -20,8 +25,13 @@
       <h1>HealthyHabits - Edition 2</h1>
       <h2>Understanding Stress & Anxiety</h2>
       <div id="stress-meter">
-        <div id="stress-level"></div>
+        <div class="stress-meter-bar"></div>
       </div>
+      <p class="hero-description">
+        Learn about the <span class="interactive-term" data-tooltip="Fight: Confront the stressor">Fight</span>, 
+        <span class="interactive-term" data-tooltip="Flight: Avoid the stressor">Flight</span>, 
+        <span class="interactive-term" data-tooltip="Freeze: Temporary inaction">Freeze</span> responses.
+      </p>
     </div>
   </section>
 
@@ -29,7 +39,7 @@
   <section class="stress-response">
     <h2>What Happens in Your Body?</h2>
     <div class="icons-container">
-      <div class="icon" data-name="Brain">🧠<span class="tooltip">Brain activates fight/flight signals</span></div>
+      <div class="icon" data-name="Brain">🧠<span class="tooltip">Brain triggers nervous system activation</span></div>
       <div class="icon" data-name="Heart">❤️<span class="tooltip">Heart rate increases</span></div>
       <div class="icon" data-name="Lungs">🌬️<span class="tooltip">Breathing becomes rapid</span></div>
       <div class="icon" data-name="Muscles">💪<span class="tooltip">Muscles tense for action</span></div>
@@ -49,7 +59,7 @@
     </div>
   </section>
 
-  <!-- ====== STRESS PERCEPTION QUIZ ====== -->
+  <!-- ====== PERCEPTION QUIZ ====== -->
   <section class="stress-quiz">
     <h2>Perception of Stress</h2>
     <p>Scenario: You have to speak in front of a large audience. How do you feel?</p>
@@ -99,7 +109,11 @@
         <button class="accordion-btn">Coping Strategies</button>
         <div class="accordion-content">
           <p>Breathing exercises, meditation, physical activity, and talking to someone can help.</p>
-          <div class="breathing-circle"></div>
+          <div class="breathing-guide">
+            <p class="breathing-instruction">Follow the circle: Inhale as it grows, exhale as it shrinks</p>
+            <div class="breathing-circle"></div>
+            <p class="breathing-tip">Try this 4-7-8 technique: Breathe in for 4 counts, hold for 7, exhale for 8</p>
+          </div>
         </div>
       </div>
     </div>
